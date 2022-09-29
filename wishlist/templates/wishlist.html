@@ -59,37 +59,21 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Find Ur Wishlist" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
   
-  <!-- <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-custom">
-      <a class="navbar-brand" href="#">WISHLIST {{user.username}} 👯💰
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'wishlist:logout' %}" title"">Log out</a>
-          </li>
-        </ul>
-      </div>
-    </nav> -->
 
 <table>
     <div class="container" style = "font-family:Poppins;font-size:12px;font-style:bold;">
         <h6><center>Wishlist Page</h6></center>
         <table class="center">
           <tr style="background-color: rgb(218, 214, 154); color:aliceblue">
-    <th>Nama Barang</th>
-    <th>Harga Barang</th>
-    <th>Deskripsi</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
     </tr>
     {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
     {% for barang in list_barang %}
@@ -101,7 +85,7 @@
     {% endfor %}
 </table>
 <h6><center>Sesi terakhir login: {{ last_login }}</h6></center>
-<!-- <button><center><a href="{% url 'wishlist:logout' %}">Logout</a></button></center> -->
+
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
