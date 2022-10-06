@@ -71,18 +71,6 @@
         <h6><center>Wishlist Page</h6></center>
         <table class="center">
           <tr style="background-color: rgb(218, 214, 154); color:aliceblue">
-    <th>Name</th>
-    <th>Price</th>
-    <th>Description</th>
-    </tr>
-    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
-    {% for barang in list_barang %}
-    <tr>
-        <th>{{barang.nama_barang}}</th>
-        <th>{{barang.harga_barang}}</th>
-        <th>{{barang.deskripsi}}</th>
-    </tr>
-    {% endfor %}
 </table>
 <h6><center>Sesi terakhir login: {{ last_login }}</h6></center>
 
